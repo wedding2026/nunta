@@ -215,6 +215,9 @@ body {
     text-align: center;
     font-size: 60%;
 }
+#confirmare {
+    scroll-margin-top: -99999999px;
+}
 /*NavBar*/
 .navbar {
   width: 100%;
