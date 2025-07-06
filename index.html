@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitatie Nunta</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--NavBar-->
+<nav class="navbar">
+  <ul class="nav-list">
+    <li><a href="#acasa">Ce?</a></li>
+    <li><a href="#countdown">Cand?</a></li>
+    <li><a href="#eveniment">Unde?</a></li>
+    <li><a href="#confirmare">Confirmare</a></li>
+  </ul>
+</nav>
+    <!--Back1/pag.principala-->
+    <div id="acasa" class="back1">
+        <div class="flori-st"><img src="images/flori-s.png" alt="ffs"></div>
+        <div class="text-principal">
+               <h1 class="nume">Oana & Daniel</h1>
+               <p class="nasi-parinti">NASII,MARTORII IUBIRII NOASTRE</p>
+               <h2 class="nume-nasi">Gabi & Angi</h2>
+               <p class="nasi-parinti">PARINTII NOSTRI,ETERNA NOASTRA ANCORA IN CALATORIA VIETII.</p>
+               <h2 id="nume-p" class="nume-parinti">Rodica Stanescu si Cristian Gabor</h2>
+               <h2 id="nume-p" class="nume-parinti">&</h2>
+               <h2 id="nume-p" class="nume-parinti">Marilena Pop si Tudor Dordai</h2>
+               </div>
+        <div class="flori-dr"><img src="images/flori-d.png" alt="ffd"></div>
+    </div>
+               
+<!--Back2/Countdown-->
+<div id="countdown" class="back2">
+  <section class="content-timer">
+  <img class="logo" src="images/save-the-date-white.png" alt="logo">
+        <h1 class="h1-countdown">Sambata, 25 Aprilie 2026</h1>
+        <h1 class="h2-countdown">Hotel Briliant,Cluj-Napoca</h1>
+  <div class="countdown2">
+    <div><span id="days">0</span><div class="label">Zile</div></div>
+    <div><span id="hours">0</span><div class="label">Ore</div></div>
+    <div><span id="minutes">0</span><div class="label">Minute</div></div>
+    <div><span id="seconds">0</span><div class="label">Secunde</div></div>
+  </div>
+  </section>
+
+
+  <script>
+    // Set your target date and time here
+    const targetDate = new Date("2026-04-25T11:29:59").getTime();
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const gap = targetDate - now;
+
+      const second = 1000;
+      const minute = second * 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+
+      const days = Math.floor(gap / day);
+      const hours = Math.floor((gap % day) / hour);
+      const minutes = Math.floor((gap % hour) / minute);
+      const seconds = Math.floor((gap % minute) / second);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    };
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // initial call
+  </script>
+    </div>
+    <!--Back3/det.ev-->
+    <div id="eveniment" class="back3">
+      <div class="text-sus">
+      <h1 class="nume-ev">Evenimentele noastre</h1>
+      <h2 class="det-ev">Detalii cu privire la momentele noastre speciale</h2>
+      <h3 class="citat">"Dragostea nu înseamnă a te uita lung unul la celălalt, ci a te uita împreună în aceeași direcție" - Antoine de Saint-Exupéry</h3>
+    </div>
+    <div class="container-poze">
+      <div class="container-b">
+      <div class="img-biserica"></div>
+      <div class="text-biserica">
+        <P class="text-cununie">Cununia Religioasa</P>
+        <p class="data-ora-ev">Sambata,25 Aprilie 2026,<span class="br-mq"><br></span> 11:30</p>
+        <p class="detalii-ev">Biserica Vovidenia,Calea Baciului 22, Cluj-Napoca</p>
+      </div>
+        <a class="vezi-peharta-s" href="https://maps.app.goo.gl/ezmyK7eMbDsEwMHt6" 
+        target="blank">Vezi pe harta</a>
+      </div>
+      <div class="container-r">
+      <div class="img-restaurant"></div>
+      <div class="text-restaurant">
+        <p class="text-petrecere">Petrecerea</p>
+        <p class="data-ora-ev">Sambata,25 Aprilie 2026, 14:00</p>
+        <p class="detalii-ev">Hotel Briliant,Strada Făgetului 5C, Cluj-Napoca</p>
+      </div>
+        <a class="vezi-peharta-d" href="https://maps.app.goo.gl/ZqWjLt9WAfnwnzeL8" 
+        target="blank">Vezi pe harta</a>
+      </div>
+    </div>
+    </div>
+    <!--Back4/confirmare-->
+    <div id="confirmare" class="back4">
+      <a class="confirma-prezenta" 
+      href="https://forms.office.com/r/YYUAn3M8DD?embed=true" 
+      target="_blank">Confirma prezenta</a>
+      <div class="m-s">
+      <h1 class="multumim">Multumim</h1>
+      <h1 class="semnatura">Oana & Daniel</h1>
+      </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+body {
+    display: flex;
+    flex-direction:column;
+    margin: 0; 
+}
+/* Back1/pag.principala */
+.back1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+#acasa {
+    scroll-margin-top: 0px;
+}
+.flori-st {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(5, 219, 219, 0);
+}
+.flori-dr {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    height: 100vh;
+     background-color: rgba(5, 219, 219, 0);
+
+}
+.text-principal {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 100%;
+    z-index: 900;
+    text-align: center;
+    gap: 0.1rem;
+    text-wrap: nowrap;
+}
+#nume-p {
+   line-height: 1rem;
+}
+/* Back2/Countdown */
+.back2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/fundaltimer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+.content-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 25%;
+    font-size: clamp(1rem, 1vw ,3em);
+    text-wrap: nowrap;
+    text-align: center;
+    
+}
+.countdown2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    
+}
+.h1-countdown, .h2-countdown {
+    color: white;
+    font-size: 250%;
+}
+/* Back3/det.ev */
+.back3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.text-sus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+.citat {
+    text-wrap:wrap ;
+}
+.img-biserica {
+    width: 250px;
+    height: 250px;
+    background-image: url(images/pozabiserica.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: center;
+}
+.text-biserica {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.br-mq {
+  display: none;
+}
+.text-restaurant {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.img-restaurant {
+    width: 250px;
+    height: 250px;
+    background-image: url(images/pozarestaurant.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: center;
+}
+.container-b , .container-r {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 55% 45% ;
+    grid-auto-rows: auto;
+    text-align: center;
+    line-height: 2rem;
+}
+.text-petrecere , .text-cununie {
+    font-size: calc(0.5rem + 1vw);
+}
+.container-poze {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+}
+.vezi-peharta-s , .vezi-peharta-d {
+    background-color: #858283;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: calc(0.1rem + 1vw);
+    text-decoration: solid;
+    transition: background-color 0.3s;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* Back4/confirmare */
+.back4 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/submit-img.jpg);
+    background-repeat: no-repeat;
+    background-position: 28% center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 0.3fr 2fr 0.3fr;
+
+}
+.confirma-prezenta {
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+    align-self: center;
+    margin-top: 8%;
+    background-color: #25252534;
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: solid;
+    font-size: calc(1.5rem + 1vw); 
+    border-radius: 15px;
+}
+.m-s {
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 60%;
+}
+/*NavBar*/
+.navbar {
+  width: 100%;
+  height: 2.5vh;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.3); /* semitransparent alb */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* chenar alb semitransparent */
+  backdrop-filter: blur(0px); /* efect de sticlă mată */
+  border-radius: 20px;
+  z-index: 999;
+  padding: 10px 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+/*NavBar List*/
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 50%;
+  margin: 0;
+  padding: 0;
+  font-family: "Gabarito";
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #caa4a4af;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 1205px) {
+.flori-dr, .flori-st {
+    display: none;
+}
+.back1 {
+    background-image: url(images/flori-full-m.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.text-principal {
+    text-wrap: wrap;
+    font-size: clamp(0.7rem, 1.5vw ,3em);
+    padding: 10%;
+}
+.nav-list {
+    gap: calc(1.5rem + 1vw);
+}
+.content-timer {
+    text-wrap: wrap;
+    font-size: calc(0.6rem + 1vw);
+    bottom: 10%;
+}
+.countdown2 {
+    font-size: calc(1rem + 1vw);
+}
+}
+@media (max-width: 430px) and (max-height: 640px) {
+    .back3 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .content-timer {
+        bottom: 15%;
+    }
+    .container-poze {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-b, .container-r {
+        background-color: #c4c4c44d;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2.5fr 1fr;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .img-biserica, .img-restaurant {
+        display: flex;
+        flex-shrink: 0;
+        width: calc(7rem + 1vw);
+        height: calc(7rem + 1vw);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .text-biserica, .text-restaurant {
+        text-wrap: wrap;
+        font-size: calc(0.7rem + 1vw);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .text-cununie, .text-petrecere {
+        text-align: center;
+        font-size: calc(1rem + 1vw);
+        text-wrap: nowrap;
+    }
+    .text-sus {
+        font-size: calc(0.5rem + 1vw);
+        line-height: calc(-1rem + 1vw);
+    }
+    .det-ev {
+        text-wrap: wrap;
+        line-height: 1rem;
+    }
+    .citat {
+         display: none;
+    }
+    .nav-list{
+     display: flex;
+     align-items: center;
+    }
+    .vezi-peharta-d , .vezi-peharta-s {
+        font-size: calc(0.5rem + 1vw);
+        padding: 3px 10px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-self: center;
+    }
+}
+@media (max-width: 430px) and (min-height: 641px) {
+    .back3 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .content-timer {
+        bottom: 15%;
+    }
+    .container-poze {
+        display: flex;
+        flex-direction: row;
+    }
+    .container-b, .container-r {
+        background-color: #c4c4c400;
+        display: grid;
+        grid-template-rows: 1.5fr 2fr 0.5fr;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .img-biserica, .img-restaurant {
+        display: flex;
+        flex-shrink: 0;
+        width: calc(10rem + 1vw);
+        height: calc(10rem + 1vw);
+    }
+    .text-biserica, .text-restaurant {
+        text-wrap: wrap;
+        font-size: calc(0.7rem + 1vw);
+    }
+    .br-mq {
+    display: inline;
+  }
+    .text-cununie, .text-petrecere {
+        text-align: center;
+        font-size: calc(1rem + 1vw);
+        text-wrap: nowrap;
+    }
+    .text-sus {
+        font-size: calc(0.5rem + 1vw);
+    }
+    .nume-ev {
+        font-size: 2rem;
+    }
+    .det-ev {
+        text-align: center;
+        text-wrap: wrap;
+    }
+    .citat{
+        text-align: center;
+        text-wrap: wrap;
+        font-size: calc(0.7rem + 1vw);
+        width: 85%;
+        align-self: center;
+    }
+    .vezi-peharta-d , .vezi-peharta-s {
+        justify-self: center;
+        align-self: center;
+        font-size: calc(0.6rem + 1vw);
+        padding: 5px 15px;
+    }
+}
+@media (max-height: 430px) {
+    .navbar {
+    display: none;
+    }
+    .text-sus {
+        line-height: 1rem;
+    }
+    .citat {
+        display: none;
+    }
+    .img-biserica ,.img-restaurant {
+        width: calc(10rem + 1vw);
+        height: calc(10rem + 1vw);
+        display: flex;
+        flex-shrink: 0;
+    }
+        .container-b, .container-r {
+        background-color: #c4c4c4a2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 30px;
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
